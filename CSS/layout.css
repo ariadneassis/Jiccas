@@ -1,0 +1,132 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #62a5b6;
+    color: #493d3d;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.topo{
+    background-color: #e1e5e6;
+    padding: 30px;
+    text-align:center; 
+    color:#1e5474;
+}
+
+.topo h1{
+    font-size: 50px;
+}
+
+.menuTopo{
+    overflow: hidden;
+    background-color: #c8e2e2;
+    text-align: center;
+    position: sticky;
+    top: 0px;
+}
+
+.menuTopo ul{
+    display: inline-block;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menuTopo ul li{
+    float: left;
+}
+
+.menuTopo a{
+    display: block;
+    color: #0f0f0f;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    float: right;
+    background-color: antiquewhite;
+    margin: 0 5px;
+    border-radius: 5px;
+}
+
+.menuTopo a:hover{
+    background-color: #ffffff;
+    color: #000000;
+    font-weight: bold;
+
+}
+
+.corpo{
+    width: 1024px;
+    margin: 10px auto;
+}
+
+.corpo:after{
+    clear: both;
+    content: "";
+    display: table;
+}
+
+.esquerda{
+    width: 75%;
+    float: left;
+}
+
+.direita{
+    width: 25%;
+    float: right;
+}
+
+.destaque{
+    background-color: #e1e5e6;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.imagens{
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+}
+
+footer{
+    background-color:  #e1e5e6;
+    padding: 20px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+@media screen and (max-width: 1028px) {
+    .esquerda, .direita{
+        width: 100%;
+        padding: 10px;
+    }
+
+    .corpo{
+        width: 100%;
+        padding: 5px;
+        margin: 0;
+    }
+
+}
+
+@media screen and (max-width: 400px){
+    .menuTopo ul li, .menuTopo a {
+        float: none;
+        width: 100%;
+    }
+}
+
+/* 
+    width - visualização na tela
+    padding - espaço ao redor do conteúdo
+    text-align:center - centralizar
+    border-radius - arredondar borda
+    text-decoration - decorações no texto
+    none - remover
+    @media screen - pega resolução da tela
+    max-width: 1028px - ajusta a resolução da tela
+ */
